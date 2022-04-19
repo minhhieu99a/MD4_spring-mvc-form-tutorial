@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+      <html xmlns:th="http://www.thymeleaf.org">
+      <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+</head>
+<body>
+<div th:replace="/layout::logo"></div>
+<form method="post" th:object="${employees}">
+  <input th:field="*{name}">
+  <input th:field="*{contactNumber}">
+  <button type="submit" value="submit">Tao moi</button>
+</form>
+<div th:replace="/layout::footer"></div>
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>
